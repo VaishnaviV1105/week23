@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kube-pod
+spec:
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        app: kube
+    spec:
+      containers:
+      - name: week10-iamge
+        image: app
+        imagePullPolicy: Never
+        ports:
+        - containerPort: 8080
+  selector:
+    matchLabels:
+      app: kube
