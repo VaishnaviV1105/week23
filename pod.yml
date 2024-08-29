@@ -10,11 +10,9 @@ spec:
         app: kube
     spec:
       containers:
-      - name: week10-iamge
-        image: app
+      - name: week-23
+        image: nginx
         imagePullPolicy: Never
-        ports:
-        - containerPort: 5000
   selector:
     matchLabels:
       app: kube
