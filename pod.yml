@@ -14,7 +14,7 @@ spec:
         image: app
         imagePullPolicy: Never
         ports:
-        - containerPort: 8080
+        - containerPort: 5000
   selector:
     matchLabels:
       app: kube
